@@ -1,7 +1,9 @@
 <?php
 
-$config = require __DIR__ . '/../../../config.php';
+$config = require __DIR__ . '/../../config.php';
 $db = Database::getInstance($config['database']);
+
+
 
 $headerName = "Note";
 $currentUserId = 1;
@@ -18,5 +20,4 @@ authorize($note['user_ID'] === $currentUserId)
 
 <!-- view -->
 
-
-<?php require './src/views/note.view.php'; ?>
+<?php require __DIR__. '/../../views/notes/show.view.php'; ?>

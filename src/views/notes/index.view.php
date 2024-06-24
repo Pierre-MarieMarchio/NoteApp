@@ -11,13 +11,13 @@ require __DIR__ . '/../../partials/navbar.php';
     <ul>
       <?php foreach ($notes as $note) : ?>
         <li>
-          <a href="/NoteApp/note?id=<?= $note['id'] ?>" class="hover:underline"> <?= htmlspecialchars($note['note_Title']) ?></a>
+          <a href="/note?id=<?= $note['id'] ?>" class="hover:underline"> <?= htmlspecialchars($note['note_Title']) ?></a>
         </li>
       <?php endforeach ?>
     </ul>
 
     <p class="mt-6">
-      <a href="/NoteApp/notes/note-create" class="text-blue-500 hover:underline">Create Note</a>
+      <a href="/notes/note-create" class="text-blue-500 hover:underline">Create Note</a>
 
     </p>
 

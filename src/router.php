@@ -1,8 +1,10 @@
 <?php
 
 $uri = parse_url($_SERVER['REQUEST_URI'])['path'];
-$uri = rtrim($uri, '/');
+
 $uri = urldecode($uri);
+
+
 
 $routes = require("routes.php");
 

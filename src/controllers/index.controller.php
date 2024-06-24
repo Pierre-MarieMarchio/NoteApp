@@ -5,4 +5,4 @@ $headerName = 'Home';
 
 ?>
 
-<?php require './src/views/index.view.php'; ?>
+<?php require __DIR__ .'/../views/index.view.php'; ?>

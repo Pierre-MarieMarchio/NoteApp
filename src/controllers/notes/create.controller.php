@@ -2,8 +2,9 @@
 
 require __DIR__ . ('/../../Validator.php');
 
-$config = require('config.php');
+$config = require __DIR__ . '/../../config.php';
 $db = Database::getInstance($config['database']);
+
 
 $headerName = 'Create Note';
 
@@ -33,4 +34,4 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 
 ?>
 
-<?php require './src/views/notes/create.view.php'; ?>
+<?php require __DIR__. '/../../views/notes/create.view.php'; ?>
