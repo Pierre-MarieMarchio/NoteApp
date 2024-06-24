@@ -11,7 +11,7 @@ $routes = require("routes.php");
 function abort($error = 404)
 {
     http_response_code($error);
-    require __DIR__ . '/views/' . $error . '.php';
+    require __DIR__ . '/views/errors/' . $error . '.php';
     die();
 }
 
