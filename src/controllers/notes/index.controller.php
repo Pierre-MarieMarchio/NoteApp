@@ -1,6 +1,7 @@
 <?php
 
-$headerName = "Notes";
+use Core\Database;
+
 
 
 $config = require __DIR__ . '/../../config.php';
@@ -10,9 +11,7 @@ $notes = $db->query("select * from notes where user_id = 1")->fetchAllOrFail();
 
 
 
-?>
-
-<!-- view -->
-
-
-<?php require __DIR__. '/../../views/notes/index.view.php'; ?>
+view('notes/index.view.php', [
+    'headerName' => 'Notes',
+    'notes' => $notes
+]);

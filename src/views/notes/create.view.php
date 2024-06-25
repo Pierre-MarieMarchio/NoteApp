@@ -15,7 +15,7 @@ require __DIR__ . '/../../partials/navbar.php';
                 <div class="mt-10 grid grid-cols-1 gap-x-6 gap-y-8 sm:grid-cols-6">
                     <div class="col-span-full">
 
-                        <label for="title" class="block text-sm font-medium leading-6 text-gray-900">About</label>
+                        <label for="title" class="block text-sm font-medium leading-6 text-gray-900">Title</label>
                         <div class="mt-2">
                             <textarea id="title" name="title" rows="1" class="block w-full rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6"></textarea>
                             <?php if (isset($errors['title'])) : ?>
@@ -23,7 +23,7 @@ require __DIR__ . '/../../partials/navbar.php';
                             <?php endif; ?>
                         </div>
 
-                        <label for="body" class="block text-sm font-medium leading-6 text-gray-900">About</label>
+                        <label for="body" class="block text-sm font-medium leading-6 text-gray-900">Note</label>
                         <div class="mt-2">
                             <textarea id="body" name="body" rows="3" class="block w-full rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6"></textarea>
                             <?php if (isset($errors['body'])) : ?>
