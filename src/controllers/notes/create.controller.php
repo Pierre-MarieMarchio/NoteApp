@@ -30,7 +30,9 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
             'body' => $_POST['body'],
             'user_id' => 1,
         ]);
-        console_log("note submited");
+
+        header('location: /notes');
+        exit();
     }
 };
 

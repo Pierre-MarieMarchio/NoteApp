@@ -57,7 +57,7 @@ class Database
         $result = $this->fetch();
 
         if (!$result) {
-            abort();
+            // abort();
         };
 
         return $result;
@@ -73,7 +73,7 @@ class Database
         $result = $this->fetchAll();
 
         if (!$result) {
-            abort();
+            // abort();
         };
 
         return $result;

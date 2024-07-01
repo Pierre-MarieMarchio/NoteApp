@@ -10,7 +10,7 @@ function console_log($data)
 function authorize($condition, $status = Responses::FORBIDDEN)
 {
     if (!$condition) {
-        abort($status);
+        // abort($status);
     };
     console_log($status);
 

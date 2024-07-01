@@ -30,7 +30,7 @@ require __DIR__ . '/../../partials/navbar.php';
                                 <p class="text-red-500 text-xs mt-2"> <?= $errors['body'] ?></p>
                             <?php endif; ?>
                         </div>
-                    </div>
+                    </div> 
 
                 </div>
             </div>
